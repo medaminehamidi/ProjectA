@@ -40,9 +40,9 @@ const materialTheme = createTheme({
     }
   }
 })
+
 export default () => {
   const [date, changeDate] = useState(new Date())
-
   return (
     <MuiPickersUtilsProvider utils={MomentUtils}>
       <ThemeProvider theme={materialTheme}>
