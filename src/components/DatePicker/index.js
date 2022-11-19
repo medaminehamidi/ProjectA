@@ -20,7 +20,18 @@ const materialTheme = createTheme({
         }
       }
     },
+    MuiTypography: {
+      body1: {
+        fontFamily: '\'Mulish\', sans-serif !important'
+      },
+      body2: {
+        fontFamily: '\'Mulish\', sans-serif !important'
+      }
+    },
     MuiPickersCalendarHeader: {
+      dayLabel: {
+        fontFamily: '\'Mulish\', sans-serif !important'
+      },
       iconButton: {
         backgroundColor: '#6464f7',
         color: '#fff',
