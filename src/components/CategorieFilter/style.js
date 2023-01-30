@@ -12,7 +12,7 @@ export default _ => ({
   },
   categoriesContainer: {
     display: 'flex',
-    flexDirection: 'column',
-    padding: 8
+    width: 340,
+    flexDirection: 'column'
   }
 })

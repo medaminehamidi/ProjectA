@@ -1,10 +1,14 @@
 import { makeStyles } from '@material-ui/core'
-import { Checkbox, FormControlLabel, InputAdornment, TextField, Typography } from '@mui/material'
+import { InputAdornment, TextField, Typography } from '@mui/material'
 import style from './style'
 import SearchIcon from '@material-ui/icons/Search'
+import { icons } from '../../helpers'
+import Category from '../CategoryList/Category'
+import { useState } from 'react'
 
 const useStyle = makeStyles(style)
 export default () => {
+  const [isActive, setIsActive] = useState(icons[0].color)
   const { filterContainer, titleStyle, categoriesContainer, searchInputStyle } = useStyle()
   return (
     <div className={filterContainer}>
@@ -19,41 +23,9 @@ export default () => {
         }}
       />
       <div className={categoriesContainer}>
-        <FormControlLabel
-          control={
-            <Checkbox
-              style={{
-                color: '#6464f7'
-              }}
-              indeterminate
-            />
-          }
-          label='Select all'
-        />
-        <FormControlLabel
-          control={
-            <Checkbox
-              color='warning'
-            />
-          }
-          label='Publicity'
-        />
-        <FormControlLabel
-          control={
-            <Checkbox
-              color='warning'
-            />
-          }
-          label='Technology'
-        />
-        <FormControlLabel
-          control={
-            <Checkbox
-              color='warning'
-            />
-          }
-          label='Finance'
-        />
+        <div>
+          {icons.map((item, key) => <Category isActive={isActive} setIsActive={setIsActive} key={key} component={item.icon} color={item.color} label={item.label} />)}
+        </div>
       </div>
     </div>
   )

@@ -42,5 +42,12 @@ export default _ => ({
   },
   textStyle: {
     fontFamily: '\'Mulish\', sans-serif !important'
+  },
+  searchInputStyle: {
+    width: '60%',
+    marginTop: '12px !important'
+  },
+  '& .MuiOutlinedInput-root': {
+    borderRadius: 10
   }
 })
