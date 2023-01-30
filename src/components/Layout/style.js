@@ -1,10 +1,9 @@
 export default (theme) => ({
   root: {
-    maxWidth: '100%',
+    maxWidth: '1600px',
     padding: 0,
     display: 'flex',
-    flexDirection: 'row',
-    height: '100vh'
+    flexDirection: 'row'
   },
   containerClass: {
     marginTop: 28,

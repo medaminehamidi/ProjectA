@@ -18,14 +18,12 @@ export default (theme) => ({
   },
   eventStyle: {
     margin: '12px 0',
-    minHeight: 160,
     backgroundColor: '#76d6fc',
     display: 'flex',
     borderRadius: 8
   },
   eventStyle2: {
     margin: '12px 0',
-    minHeight: 160,
     backgroundColor: '#fed37d',
     display: 'flex',
     borderRadius: 8
@@ -82,7 +80,7 @@ export default (theme) => ({
   },
   eventContentStyle: {
     width: '100%',
-    padding: 8,
+    padding: '16px 8px',
     display: 'flex',
     flexDirection: 'column'
   }

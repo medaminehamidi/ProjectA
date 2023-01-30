@@ -4,7 +4,8 @@ export default (theme) => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    margin: '28px 20px'
+    margin: '28px 20px',
+    height: '45vh'
   },
   divider: {
     margin: '10% 0',

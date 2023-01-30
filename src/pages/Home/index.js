@@ -6,6 +6,7 @@ import { Grid } from '@mui/material'
 import TimeLine from 'components/TimeLine'
 import style from './style'
 import CategorieFilter from 'components/CategorieFilter'
+import ActionSection from 'components/ActionSection'
 
 const useStyle = makeStyles(style)
 
@@ -21,6 +22,9 @@ export default () => {
         </Grid>
         <Grid className={dateCalenderContainer} item xs={6}>
           <TimeLine />
+        </Grid>
+        <Grid className={dateCalenderContainer} item xs={3}>
+          <ActionSection />
         </Grid>
       </Grid>
     </Layout>

@@ -12,7 +12,7 @@ export default () => {
         <div className={dateContainer}>
           <EventOutlinedIcon />
           <Typography className={dateTextStyle}>
-            Oct 11,2022
+            Monday Oct 11,2022
           </Typography>
         </div>
       </div>
@@ -47,7 +47,57 @@ export default () => {
               </Typography>
             </div>
             <Typography className={durrationStyle}>
-              Clean Architecture: Patterns, Practices, and Principles
+              Clean Architecture: Patterns, Practices, and PrinciplesClean Architecture: Patterns, Practices, and PrinciplesClean Architecture: Patterns, Practices, and PrinciplesClean Architecture: Patterns, Practices, and PrinciplesClean Architecture: Patterns, Practices, and Principles
+            </Typography>
+          </div>
+        </div>
+        <div className={eventStyle}>
+          <div className={divider} />
+          <div className={eventContentStyle}>
+            <div className={timeContainer}>
+              <Typography className={dateAndTimeStyle}>
+                9:30 am
+              </Typography>
+              <Typography className={durrationStyle}>
+                1h 30 min
+              </Typography>
+            </div>
+            <Typography className={durrationStyle}>
+              Modern Software Architecture: Domain Models, CQRS, and Event Sourcing
+            </Typography>
+          </div>
+        </div>
+
+        <div className={eventStyle}>
+          <div className={divider} />
+          <div className={eventContentStyle}>
+            <div className={timeContainer}>
+              <Typography className={dateAndTimeStyle}>
+                9:30 am
+              </Typography>
+              <Typography className={durrationStyle}>
+                1h 30 min
+              </Typography>
+            </div>
+            <Typography className={durrationStyle}>
+              Modern Software Architecture: Domain Models, CQRS, and Event Sourcing
+            </Typography>
+          </div>
+        </div>
+
+        <div className={eventStyle2}>
+          <div className={divider2} />
+          <div className={eventContentStyle}>
+            <div className={timeContainer}>
+              <Typography className={dateAndTimeStyle}>
+                11:45 am
+              </Typography>
+              <Typography className={durrationStyle}>
+                3h 30 min
+              </Typography>
+            </div>
+            <Typography className={durrationStyle}>
+              Clean Architecture: Patterns, Practices, and PrinciplesClean Architecture: Patterns, Practices, and PrinciplesClean Architecture: Patterns, Practices, and PrinciplesClean Architecture: Patterns, Practices, and PrinciplesClean Architecture: Patterns, Practices, and Principles
             </Typography>
           </div>
         </div>
