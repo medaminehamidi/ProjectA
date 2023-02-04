@@ -1,32 +1,22 @@
 import Layout from 'components/Layout'
 import { Grid } from '@mui/material'
+import { makeStyles } from '@material-ui/core'
 import HomeHeader from 'components/HomeHeader'
 import CategoryList from 'components/CategoryList'
-import EventDetails from '../../components/ActionSection/EventDetails'
+import style from './style'
+import Courses from '../../components/Courses'
 
+const useStyle = makeStyles(style)
 export default () => {
+  const { containerStyle } = useStyle()
   return (
     <Layout>
       <HomeHeader title='Catalog' />
-      <Grid container spacing={2}>
+      <Grid className={containerStyle} container spacing={2}>
         <Grid item xs={3}>
           <CategoryList />
         </Grid>
-        <Grid item xs={3}>
-          <EventDetails />
-          <EventDetails />
-          <EventDetails />
-        </Grid>
-        <Grid item xs={3}>
-          <EventDetails />
-          <EventDetails />
-          <EventDetails />
-        </Grid>
-        <Grid item xs={3}>
-          <EventDetails />
-          <EventDetails />
-          <EventDetails />
-        </Grid>
+        <Courses />
       </Grid>
     </Layout>
   )

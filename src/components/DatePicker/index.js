@@ -43,9 +43,10 @@ const materialTheme = createTheme({
     },
     MuiPickersBasePicker: {
       pickerView: {
-        backgroundColor: '#fa6c8414',
+        backgroundColor: '#fff',
         padding: 12,
-        borderRadius: 8,
+        border: '1px solid #ddd',
+        borderRadius: 10,
         minWidth: 'auto'
       }
     }

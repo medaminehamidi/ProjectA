@@ -7,7 +7,7 @@ export default (theme) => ({
     display: 'flex',
     alignItems: 'center',
     cursor: 'pointer',
-    transition: 'all .15s ease',
+    transition: 'all .25s ease',
     '&:hover': {
       padding: '16px 16px 16px 28px'
     },

@@ -1,22 +1,21 @@
-import { makeStyles } from '@material-ui/core'
-import { Avatar, Paper } from '@mui/material'
 import Layout from 'components/Layout'
-import { atlImage } from 'helpers'
-import style from './style'
-
-const useStyle = makeStyles(style)
+import { Grid } from '@mui/material'
+import HomeHeader from 'components/HomeHeader'
+import Profile from 'components/Profile'
+import SideBanner from 'components/Profile/SideBanner'
 
 export default () => {
-  const { generalInfo } = useStyle()
   return (
     <Layout>
-      <Paper className={generalInfo} elevation={3}>
-        <Avatar
-          alt='Remy Sharp'
-          src={atlImage}
-          sx={{ width: 60, height: 60 }}
-        />
-      </Paper>
+      <HomeHeader title='My Profile' />
+      <Grid container spacing={2}>
+        <Grid item xs={7}>
+          <Profile />
+        </Grid>
+        <Grid item xs={5}>
+          <SideBanner />
+        </Grid>
+      </Grid>
     </Layout>
   )
 }

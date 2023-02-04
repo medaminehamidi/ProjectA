@@ -15,7 +15,7 @@ export default ({ title }) => {
         <Typography className={textStyle} variant='h4' component='p'>
           {title || 'Welcome Back Deku'}
         </Typography>
-        {title && (
+        {title === 'Catalog' && (
           <TextField
             label='Search...'
             className={searchInputStyle}

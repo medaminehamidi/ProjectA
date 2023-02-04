@@ -8,7 +8,7 @@ export default () => {
   const { datePickerContainer, textStyle } = useStyle()
   return (
     <div className={datePickerContainer}>
-      <Typography className={textStyle} variant='h4' component='p'>
+      <Typography className={textStyle} fontSize={29} variant='h4' component='p'>
         Availability
       </Typography>
       <DatePicker />

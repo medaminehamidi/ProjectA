@@ -53,9 +53,14 @@ export default (theme) => ({
   },
   seeMoreStyle: {
     display: 'flex',
+    padding: 16,
     marginLeft: 21,
     alignItems: 'center',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    transition: 'all .35s ease',
+    '&:hover': {
+      padding: '16px 16px 16px 28px'
+    }
   },
   actionsContainer: {
     marginTop: 21
