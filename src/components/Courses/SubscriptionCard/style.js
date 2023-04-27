@@ -17,7 +17,7 @@ export default (theme) => ({
   iconAndCount: {
     display: 'flex',
     fontSize: 14,
-    color: '#6464f7',
+    color: ({ daysRemaining }) => daysRemaining < 10 ? '#f50057' : '#6464f7',
     marginTop: 16,
     width: 'fit-content',
     justifyContent: 'center',

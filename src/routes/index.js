@@ -5,6 +5,7 @@ import Home from 'pages/Home'
 import { history } from 'store'
 import Profile from 'pages/Profile'
 import Catalogue from 'pages/Catalogue'
+import Pricing from 'pages/Pricing'
 
 export default _ =>
   <ConnectedRouter history={history}>
@@ -18,10 +19,14 @@ export default _ =>
       <Route exact path={ProfilePath}>
         <Profile />
       </Route>
+      <Route exact path={PricingPath}>
+        <Pricing />
+      </Route>
     </Switch>
   </ConnectedRouter>
 
 export const HomePath = '/'
 export const ProfilePath = '/profile'
+export const PricingPath = '/pricing'
 export const CataloguePath = '/catalogue'
 export const ErrorPath = '/error'
